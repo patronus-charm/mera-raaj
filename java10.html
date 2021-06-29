@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetTimeOut</title>
+</head>
+<style>
+    .container{
+        text-align: center;
+        background-color: chocolate;
+    }
+    #time{
+        font-size: 23px;
+        font-weight: bold;
+        border: black;
+        text-align: center;
+
+    }
+</style>
+<body>
+    <div class="container">
+        Current time is <span id="time"></span>
+    </div>
+    <script>
+        console.log("This is a tutorial");
+        function greet(name,byeText)
+        {
+            console.log("Hello Good Morning "+name+" "+byeText);
+        }
+        //setTimeout(greet,10000,"Ashish","Be Happy");
+        Intervalid=setInterval(greet,1000,"Ashish","Be Happy");
+        clearInterval(Intervalid);
+        function displayTime()
+        {
+            time=new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML=time;
+        }
+        setInterval(displayTime,1000);
+    </script>
+</body>
+</html>

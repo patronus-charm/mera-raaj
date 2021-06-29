@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope & Conditioonals</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>
+                Item-1
+            </li>
+            <li>
+                Item-2
+            </li>
+            <li>
+                Item-3
+            </li>
+            <li>
+                Item-4
+            </li>
+                
+               
+            
+        </ul>
+    </div>
+    <script>
+        let a="x";
+        {
+            let a="b";
+            console.log(a);
+        }
+        console.log(a);
+        if(a=='u')
+        console.log(a);
+        else
+        console.log("Sorry");
+        let name="Ashish";
+        switch(name)
+        {
+            case "Ashish":
+            console.log("Intelligent");
+            break;
+            case "Ayush":
+            console.log("Smart");
+            break;
+            default:
+            console.log("Duffer");
+            
+        }
+    </script>
+</body>
+</html>

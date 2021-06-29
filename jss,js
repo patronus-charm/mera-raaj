@@ -1,0 +1,21 @@
+console.log("This is a tutorial");
+function greet(name,comment=" good boy")
+{
+    console.log(name+comment);
+}
+let comment=" good girl";
+let name1="Ashish";
+let name2="Ayush";
+let name3="Lovey";
+greet(name1);
+greet(name2,comment);
+greet(name3);
+let a=1;
+let b=2;
+let c=3;
+function sum(a,b,c)
+{
+    return (a+b+c);
+}
+let val=sum(a,b,c);
+console.log(val);
